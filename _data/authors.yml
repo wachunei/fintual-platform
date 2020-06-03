@@ -1,0 +1,25 @@
+fintual:
+  name: Fintual
+  avatar: /assets/fintual.png
+  tagline: "La mejor AGF"
+  email: contacto@fintual.com
+  twitter: fintual
+  github: fintual
+  social:
+    - title: "github"
+      url: "https://github.com/fintual"
+    - title: "linkedin"
+      url: "https://www.linkedin.com/in/fintual"
+
+boris-macias:
+  name: Boris Macias
+  avatar: /assets/boris-macias.jpg
+  tagline: "Panadero certificado @ Fintual"
+  email: boris@fintual.com
+  twitter: anyoneghost
+  github: borismacias
+  social:
+    - title: "github"
+      url: "https://github.com/borismacias"
+    - title: "linkedin"
+      url: "https://www.linkedin.com/in/borismacias"

@@ -3,6 +3,7 @@
 
 <head>
   {%- include head.html -%}
+  <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
 
 {% if page.author %}
@@ -14,7 +15,7 @@
 <body>
   <main class="container">
     <section class="about">
-      <a href="/"><img src="{{ author.avatar | relative_url }}" alt="{{ author.name }}"></a>
+      <a href="/"><img src="{{ author.avatar | relative_url }}" class="avatar" alt="{{ author.name }}"></a>
       <h2 id="title">
         <a href="/">{{ author.name }}</a>
       </h2>

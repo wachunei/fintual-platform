@@ -28,7 +28,7 @@ twitter_username: anyoneghost
 github_username:  borismacias
 
 # Build settings
-theme: minima
+remote_theme: thelehhman/plainwhite-jekyll
 plugins:
   - jekyll-feed
 

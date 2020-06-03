@@ -3,7 +3,7 @@
 
 <head>
   {%- include head.html -%}
-  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
 </head>
 
 {% if page.author %}

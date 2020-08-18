@@ -11,7 +11,4 @@ Este es el primer post para fintual platform.
 
 Ya se puede configurar autor por cada entrada 🙂.
 
-Si quieres que aparezca tu script aquí, envíanos un PR siguiendo [esta guía][contributing].
-
-
-[contributing]: #
+Si quieres que aparezca tu script aquí, envíanos un PR siguiendo [esta guía]({% post_url 2020-09-19-publica-tu-articulo %})

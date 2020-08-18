@@ -11,7 +11,7 @@ Fintual Platform es el sucesor espiritual de nuestro [blog ingenieril](https://e
 
 La idea es publicar acá cosas que podamos hacer con la api de Fintual o scripts en [Tampermonkey](https://www.tampermonkey.net/) o [Greasemonkey](https://www.greasespot.net/) para mejorar la experiencia en Fintual 🎉
 
-# ¿Como?
+# ¿Cómo?
 
 Solo debes envíarnos un PR siguiendo [esta guía]({% post_url 2020-09-19-publica-tu-articulo %}) y tu código aparecerá acá 🙌🏼
 

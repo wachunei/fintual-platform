@@ -11,9 +11,7 @@ Este es el primer post para fintual platform.
 
 Ya se puede configurar autor por cada entrada 🙂.
 
-Mañana voy a publicar mi primer script de tampermonkey 😱.
-
-Si quieres que aparezca tu script aquí, envíanos un PR siguiendo [esta guía (en construcción)][contributing].
+Si quieres que aparezca tu script aquí, envíanos un PR siguiendo [esta guía][contributing].
 
 
 [contributing]: #

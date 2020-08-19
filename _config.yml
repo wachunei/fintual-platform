@@ -21,8 +21,8 @@
 title: Fintual Platform
 email: boris@fintual.com
 description: Repositorio de cosas bacanes que ha hecho la comunidad de Fintual
-baseurl: "/platform"
-url: "https://fintual.cl"
+baseurl: "/"
+url: "https://platform.fintual.cl"
 twitter_username: anyoneghost
 github_username:  borismacias
 

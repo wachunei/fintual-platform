@@ -3,7 +3,7 @@
 
 <head>
   {%- include head.html -%}
-  <link rel="stylesheet" href="{{ 'assets/css/styles.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/styles.css' | absolute_url }}">
 </head>
 
 {% if page.author %}
@@ -15,7 +15,7 @@
 <body>
   <main class="container">
     <section class="about">
-      <a href="/"><img src="{{ author.avatar | relative_url }}" class="avatar" alt="{{ author.name }}"></a>
+      <a href="/"><img src="{{ author.avatar | absolute_url }}" class="avatar" alt="{{ author.name }}"></a>
       <h2 id="title">
         <a href="/">{{ author.name }}</a>
       </h2>
@@ -108,7 +108,7 @@
           </label>
         </p>
       </div>
-      <script type="text/javascript" src="assets/js/darkmode.js"></script>
+      <script type="text/javascript" src="/assets/js/darkmode.js"></script>
       {%- endif -%}
     </section>
     <section class="content">
@@ -126,8 +126,8 @@
   {%- endif -%}
 
   {% if site.plainwhite.search %}
-  <script src="assets/js/simple-jekyll-search.min.js"></script>
-  <script src="assets/js/search.js"></script>
+  <script src="/assets/js/simple-jekyll-search.min.js"></script>
+  <script src="/assets/js/search.js"></script>
   {% endif %}
 </body>
 

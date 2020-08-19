@@ -9,7 +9,7 @@ author: boris-macias
 
 Fintual Platform es el sucesor espiritual del [blog ingenieril](https://engineering.fintual.cl/) de Fintual, que pasó sin pena ni gloria 😢
 
-La idea es publicar todas las cosas bacanes que se puedan hacer con la api de Fintual o scripts en [Tampermonkey](https://www.tampermonkey.net/) o [Greasemonkey](https://www.greasespot.net/), como ver tu saldo de bitcoins en tu cuenta de Fintual o un botón para depositar automágicamente a Fintual.
+La idea es publicar todas las cosas bacanes que se puedan hacer con la API de Fintual o scripts en [Tampermonkey](https://www.tampermonkey.net/) o [Greasemonkey](https://www.greasespot.net/), como ver tu saldo de bitcoins en tu cuenta de Fintual o un botón para depositar automágicamente a Fintual.
 
 # ¿Cómo?
 

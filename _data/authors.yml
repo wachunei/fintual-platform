@@ -1,6 +1,6 @@
 fintual:
   name: Fintual
-  avatar: assets/fintual.png
+  avatar: assets/authors/fintual.png
   tagline: "La mejor AGF"
   email: contacto@fintual.com
   twitter: fintual
@@ -13,7 +13,7 @@ fintual:
 
 boris-macias:
   name: Boris Macias
-  avatar: assets/boris-macias.jpg
+  avatar: assets/authors/boris-macias.jpg
   tagline: "Panadero certificado @ Fintual"
   email: boris@fintual.com
   twitter: anyoneghost

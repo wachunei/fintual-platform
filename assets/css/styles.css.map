@@ -1,0 +1,14 @@
+{
+	"version": 3,
+	"file": "styles.css",
+	"sources": [
+		"styles.scss",
+		"_sass/main.scss"
+	],
+	"sourcesContent": [
+		"@import \"main\";",
+		"@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700|Roboto:400,500&display=swap');\n\nbody {\n font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';\n}\n\n.avatar {\n  border-radius: 50%;\n}\n"
+	],
+	"names": [],
+	"mappings": "ACAA,OAAO,CAAC,kGAAI;AAEZ,AAAA,IAAI,CAAC,EACJ,WAAW,EAAE,wJAAwJ,GACrK;;AAED,AAAA,OAAO,CAAC,EACN,aAAa,EAAE,GAAG,GACnB"
+}

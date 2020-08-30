@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link href="https://fonts.googleapis.com/css?family=Merriweather:300|Raleway:400,700" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/style.css">
+<title>¿Cómo ver en Fintual los bitcoins en tu billetera de Buda?</title>
+<!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>¿Cómo ver en Fintual los bitcoins en tu billetera de Buda? | Fintual Platform</title>
+<meta name="generator" content="Jekyll v4.1.0" />
+<meta property="og:title" content="¿Cómo ver en Fintual los bitcoins en tu billetera de Buda?" />
+<meta name="author" content="Boris Macias" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="¿Buda?" />
+<meta property="og:description" content="¿Buda?" />
+<link rel="canonical" href="https://platform.fintual.cl/tampermonkey/2020/08/29/bitcoins-en-tu-cuenta-fintual.html" />
+<meta property="og:url" content="https://platform.fintual.cl/tampermonkey/2020/08/29/bitcoins-en-tu-cuenta-fintual.html" />
+<meta property="og:site_name" content="Fintual Platform" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-08-29T08:13:01+00:00" />
+<script type="application/ld+json">
+{"headline":"¿Cómo ver en Fintual los bitcoins en tu billetera de Buda?","dateModified":"2020-08-29T08:13:01+00:00","datePublished":"2020-08-29T08:13:01+00:00","author":{"@type":"Person","name":"Boris Macias"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://platform.fintual.cl/tampermonkey/2020/08/29/bitcoins-en-tu-cuenta-fintual.html"},"url":"https://platform.fintual.cl/tampermonkey/2020/08/29/bitcoins-en-tu-cuenta-fintual.html","description":"¿Buda?","@type":"BlogPosting","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="https://platform.fintual.cl/assets/css/styles.css">
+</head>
+
+
+
+<body>
+  <main class="container">
+    <section class="about">
+      <a href="/"><img src="https://platform.fintual.cl/assets/authors/boris-macias.jpg" class="avatar" alt="Boris Macias"></a>
+      <h2 id="title">
+        <a href="/">Boris Macias</a>
+      </h2>
+      <p class="tagline">Panadero certificado @ Fintual</p>
+      <ul class="social"></ul><p>&copy;
+        2020</p></section>
+    <section class="content">
+      <div class="post-container">
+  <a class="post-link" href="/tampermonkey/2020/08/29/bitcoins-en-tu-cuenta-fintual.html">
+    <h2 class="post-title">¿Cómo ver en Fintual los bitcoins en tu billetera de Buda?</h2>
+  </a>
+  <div class="post-meta">
+    <div class="post-date"><i class="icon-calendar"></i>Aug 29, 2020</div><ul class="post-categories"><li>tampermonkey</li></ul></div>
+  <div class="post">
+    <h2 id="buda">¿Buda?</h2>
+
+<p>Por si no conoces Buda, Buda es el mejor exchange de criptomonedas de sudamérica y <a href="https://www.buda.com" target="_blank"><b>acá</b></a> puedes ver más sobre ellos.</p>
+
+<h2 id="fintual">¿Fintual?</h2>
+
+<p>Bueno, si no conocieras Fintual no estarías acá.</p>
+
+<h2 id="buda--fintual">¿Buda + Fintual?</h2>
+
+<p>Si, es posible, por ahora como plugin de Tampermonkey/Greasemonkey.</p>
+
+<p>Antes de empezar este tutorial necesitas crear tu cuenta en <a href="https://www.buda.com" target="_blank"><b>Buda</b></a> y ojalá tener algunos satoshis en tu wallet (para poder ver que funciona el script).</p>
+
+<p>Con tu cuenta creada en buda (y tus satoshis listos 🚀) tendrás que crear tu API Key y API Secret acá <a target="_blank" href="https://www.buda.com/manejar_api_keys">https://www.buda.com/manejar_api_keys</a>. Ponle un nombre a tu key, una fecha de expiración con la que te sientas cómod@ y <b>no actives las casillas “¿Puede crear órdenes?” ni “¿Puede hacer retiros?”</b> porque solo necesitamos las keys para ver tu saldo.</p>
+
+<p><img src="/assets/buda-fintual/api-key.png" style="width: 50%" /></p>
+
+<p>Guarda la llave y el secreto que se generarán en un lugar seguro (los vamos a necesitar más adelante).</p>
+
+<p>Con tu cuenta Buda lista, ahora tenemos que <a href="https://www.tampermonkey.net/">descargar</a> e instalar Tampermonkey</p>
+
+<p><img src="/assets/buda-fintual/tampermonkey-download.png" style="width: 50%" /></p>
+
+<p>Luego hacemos click en el plugin</p>
+
+<p><img src="/assets/buda-fintual/plugin.png" style="width: 50%" /></p>
+
+<p>Y en el menú que se despliega en “Create new script”</p>
+
+<p><img src="/assets/buda-fintual/create-script.png" style="width: 50%" /></p>
+
+<p>Se abrirá un editor en una nueva pestaña, donde tendrás que pegar el código que compone este plugin.<br />
+Esta es la URL del código: <a target="_blank" href="https://raw.githubusercontent.com/borismacias/buda-fintual-tampermonkey/master/main.js">https://raw.githubusercontent.com/borismacias/buda-fintual-tampermonkey/master/main.js</a> (Al final de este artículo está la explicación paso a paso de lo que hace el código)</p>
+
+<p><img src="/assets/buda-fintual/raw-code.png" style="width: 50%" /></p>
+
+<p>Después de copiar y pegar el código, tienes que ir a “File” -&gt; “Save”</p>
+
+<p><img src="/assets/buda-fintual/save.png" /></p>
+
+<p>Y listo, ya está instalado el plugin y podrás verlo cuando entres a la página principal de fintual, con esta URL exacta <a href="https://fintual.cl/" target="_blank">https://fintual.cl/</a>.</p>
+
+<p>Ahora que ya tenemos el plugin instalado, la primera vez que entres a Fintual tendrás que configurarlo.</p>
+
+<p>Primero aparece este cuadro de diálogo, acá tenemos que ingresar un texto al azar que se va a utilizar para poder encriptar tu API Key y API secret de Buda</p>
+
+<p><img src="/assets/buda-fintual/setup-1.png" style="width: 50%" /></p>
+
+<p>Despues tienes que ingresar la API Key de buda que generamos al principio de esta guía</p>
+
+<p><img src="/assets/buda-fintual/setup-2.png" style="width: 50%" /></p>
+
+<p>Y finalmente ingresa el API Secret.</p>
+
+<p><img src="/assets/buda-fintual/setup-3.png" style="width: 50%" /></p>
+
+<p>El API Key y el Secret solo se guardan localmente y además encriptados con el texto que ingresaste al comienzo de la configuración.</p>
+
+<p>Ahora, si entras a tu cuenta Fintual, y vas a <a href="https://fintual.cl/" target="_blank">https://fintual.cl/</a> (no va a funcionar en ninguna otra URL) se abrirá un nuevo tab de Tampermonkey pidiéndote permisos para permitir que el script hable con otro dominio, en este caso necesita hablar con <b>https://buda.com</b>. Solo necesitas hacer click en <b>Always allow domain</b></p>
+
+<p><img src="/assets/buda-fintual/setup-4.png" style="width: 50%" /></p>
+
+<p>Despues de <u>aprobar</u> los permisos, recarga la pestaña en la que estabas y deberías ver tu saldo de bitcoins en pesos bajo el título “Otras Platas” así</p>
+
+<p><img src="/assets/buda-fintual/setup-5.png" style="width: 50%" /></p>
+
+<p>Si por algún motivo el texto se queda pegado en “Hablando con Buda”, reinicia Chrome y recarga la página</p>
+
+<p><b>Para cualquier sugerencia/corrección, pueden mandarme un PR a <a href="https://github.com/borismacias/buda-fintual-tampermonkey">https://github.com/borismacias/buda-fintual-tampermonkey</a> o un correo a <a href="mailto:boris@fintual.com">boris@fintual.com</a></b></p>
+
+<h2 id="el-código">El código</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// @match        https://fintual.cl/
+// @require      http://crypto.stanford.edu/sjcl/sjcl.js
+// @require      https://cdnjs.cloudflare.com/ajax/libs/js-sha512/0.8.0/sha512.min.js
+// @grant    GM_getValue
+// @grant    GM_setValue
+// @grant    GM_registerMenuCommand
+// @grant    GM.xmlHttpRequest
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">@match</code>: La URL donde este plugin se ejecuta, en este caso es https://fintual.cl/ <br />
+<code class="language-plaintext highlighter-rouge">@require</code>: Se utiliza para cargar librerías exteras. En este script necesitamos la Stanford Javascript Crypto Library y sha512, para encriptar las credenciales y para encriptar la firma para usar la api de buda<br />
+<code class="language-plaintext highlighter-rouge">@grant</code>: La usamos para “importar” funciones de greasemoney/tampermonkey</p>
+
+<p><br /></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function buildHTML(capital) {
+  return '&lt;div class="fintual-app-goal-item"&gt;' +
+           '&lt;a class="fintual-app-goal-item__link" href="#"&gt;&lt;/a&gt;' +
+           '&lt;div class="fintual-app-goal-item__details"&gt;' +
+             '&lt;div class="fintual-app-goal-item__name fintual-app-goal-item__name--deposited"&gt;' +
+               '&lt;span&gt;Bitcoins ₿&lt;/span&gt;' +
+             '&lt;/div&gt;' +
+           '&lt;/div&gt;' +
+           '&lt;div class="fintual-app-goal-item__status-detail"&gt;' +
+             '&lt;div class="fintual-app-goal-item__amount"&gt;'+ capital +'&lt;/div&gt;' +
+           '&lt;/div&gt;' +
+         '&lt;/div&gt;'
+}
+</code></pre></div></div>
+<p><code class="language-plaintext highlighter-rouge">buildHTML(capital)</code>: Construye los nodos que muestran el monto en CLP</p>
+
+<p><br /></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function checkEncKey() {
+  let encKey = GM_getValue('encKey', '');
+
+  if (!encKey) {
+    encKey = prompt(
+      'Necesitamos un texto random para poder encriptar tus datos. Porfa ingresa cualquier texto:',
+    );
+    GM_setValue('encKey', encKey);
+  }
+}
+</code></pre></div></div>
+<p><code class="language-plaintext highlighter-rouge">checkEncKey()</code>: Revisa si existe el valor para la llave que encripta las credenciales</p>
+
+<p><br /></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function buildMenuCommands() {
+  GM_registerMenuCommand('Cambiar API Key', changeApiKey);
+  GM_registerMenuCommand('Cambiar API Secret', changeApiSecret);
+}
+
+function changeApiKey() {
+  promptAndChangeStoredValue('Api key', 'apiKey');
+  rebuildBitcoinContainerInnerHtml('Recarga la página 🙏🏼')
+}
+
+function changeApiSecret() {
+  promptAndChangeStoredValue('Api secret', 'apiSecret');
+  rebuildBitcoinContainerInnerHtml('Recarga la página 🙏🏼')
+}
+
+function promptAndChangeStoredValue(userPrompt, setValVarName) {
+  let targVar = prompt('Cambiar ' + userPrompt, '');
+  GM_setValue(setValVarName, encryptAndStore(targVar));
+}
+
+function rebuildBitcoinContainerInnerHtml(amount) {
+  let bitcoinContainer = document.getElementById('bitcoin-container');
+  bitcoinContainer.innerHTML = buildHTML(amount)
+}
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">buildMenuCommands()</code>: Crea menúes para poder cambiar manualmente la api key y api secret sin tener que desinstalar el plugin <br />
+<code class="language-plaintext highlighter-rouge">changeApiKey()</code> - <code class="language-plaintext highlighter-rouge">changeApiSecret()</code>: Prompts y setters para ApiKey y ApiSecret<br />
+<code class="language-plaintext highlighter-rouge">promptAndChangeStoredValue</code>: self explanatory<br />
+<code class="language-plaintext highlighter-rouge">rebuildBitcoinContainerInnerHtml(amount)</code>: reconstruye el contenedor con el monto</p>
+
+<p><br /></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function decodeOrPrompt(targVar, userPrompt, setValVarName) {
+  if (!targVar) {
+    targVar = prompt(userPrompt + ' no está seteada. Ingrésala acá:','');
+    GM_setValue(setValVarName, encryptAndStore(targVar));
+  }
+  else {
+    targVar = unStoreAndDecrypt(targVar);
+  }
+  return targVar;
+}
+
+function encryptAndStore(clearText) {
+  const encKey = GM_getValue('encKey', '');
+  return JSON.stringify(sjcl.encrypt(encKey, clearText));
+}
+
+function unStoreAndDecrypt(jsonObj) {
+  const encKey = GM_getValue('encKey', '');
+  return sjcl.decrypt(encKey, JSON.parse(jsonObj));
+}
+</code></pre></div></div>
+<p><code class="language-plaintext highlighter-rouge">decodeOrPrompt(targVar, userPrompt, setValVarName)</code>: retorna <code class="language-plaintext highlighter-rouge">tarVar</code> desencriptada si existe, sino usa un prompt con el texto <code class="language-plaintext highlighter-rouge">userPrompt</code> y la guarda en <code class="language-plaintext highlighter-rouge">setValVarName</code><br />
+<code class="language-plaintext highlighter-rouge">encryptAndStore(clearText)</code>: encripta el texto plano <code class="language-plaintext highlighter-rouge">clearText</code> usando la librería de stanford <br />
+<code class="language-plaintext highlighter-rouge">unStoreAndDecrypt(jsonObj)</code>: retorna <code class="language-plaintext highlighter-rouge">jsonObj</code> desencriptado</p>
+
+<p><br /></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function fillCapital(key, secret){
+  const nonce = getNonce();
+  const baseURL = 'https://www.buda.com';
+  const balancePath = '/api/v2/balances';
+  const unsignedString = 'GET ' + balancePath + ' ' + nonce;
+  const signature = sha384.hmac(secret, unsignedString);
+  const balanceUrl = baseURL + balancePath;
+
+  GM.xmlHttpRequest({
+    method: "GET",
+    url: balanceUrl,
+    headers: {
+      'X-SBTC-APIKEY': key,
+      'X-SBTC-SIGNATURE': signature,
+      'X-SBTC-NONCE': nonce
+    },
+    onload: function(balanceResponse) {
+      const parsedBalanceResponse = JSON.parse(balanceResponse.responseText);
+      const btcBalance = parsedBalanceResponse.balances.find(function(balance){ return balance.id === "BTC"});
+      const btcAmount = parseFloat(btcBalance.available_amount[0]);
+
+      GM.xmlHttpRequest({
+        method: "POST",
+        headers: {
+            'Accept': 'application/json',
+            "Content-Type": "application/json"
+        },
+        url: "https://www.buda.com/api/v2/markets/btc-clp/quotations",
+        data: JSON.stringify({type: "bid_given_earned_base",amount: btcAmount + ""}),
+        dataType: 'json',
+        contentType: 'application/json',
+        overrideMimeType: 'application/json',
+        onload: function (quotationResponse) {
+          const parsedQuotationResponse = JSON.parse(quotationResponse.responseText);
+          const capital = parsedQuotationResponse.quotation.quote_exchanged[0];
+          rebuildBitcoinContainerInnerHtml(currencyFormattedAmount(capital))
+        }
+      })
+    }
+  });
+}
+
+function currencyFormattedAmount(amount, decimalCount = 0, decimal = ",", thousands = ".") {
+  try {
+    decimalCount = Math.abs(decimalCount);
+    decimalCount = isNaN(decimalCount) ? 2 : decimalCount;
+
+    const negativeSign = amount &lt; 0 ? "-" : "";
+
+    let i = parseInt(amount = Math.abs(Number(amount) || 0).toFixed(decimalCount)).toString();
+    let j = (i.length &gt; 3) ? i.length % 3 : 0;
+
+    return '$ ' + negativeSign + (j ? i.substr(0, j) + thousands : '') + i.substr(j).replace(/(\d{3})(?=\d)/g, "$1" + thousands) + (decimalCount ? decimal + Math.abs(amount - i).toFixed(decimalCount).slice(2) : "");
+  } catch (e) {
+    console.log(e)
+  }
+}
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">fillCapital(key, secret)</code>: Hace las llamadas a la API de buda para conseguir el balance de bitcoins y para calcular la equivalencia en CLP. Necesita la <code class="language-plaintext highlighter-rouge">key</code> y <code class="language-plaintext highlighter-rouge">secret</code><br />
+<code class="language-plaintext highlighter-rouge">currencyFormattedAmount(amount, decimalCount, decimal)</code>: Formatea el <code class="language-plaintext highlighter-rouge">amount</code> y retorna elmonto con <code class="language-plaintext highlighter-rouge">$</code> y <code class="language-plaintext highlighter-rouge">.</code><br />
+<code class="language-plaintext highlighter-rouge">getNonce()</code>: Retorna el timestamp de <code class="language-plaintext highlighter-rouge">now</code> para usarlo en las llamadas a la API de Buda<br /></p>
+
+<p><br /></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(function() {
+    'use strict';
+
+    checkEncKey();
+    let key = GM_getValue('apiKey', '');
+    let secret = GM_getValue('apiSecret', '');
+    key = decodeOrPrompt(key, 'ApiKey de Buda', 'apiKey');
+    secret = decodeOrPrompt(secret, 'ApiSecret de Buda', 'apiSecret');
+    if(!key || !secret){
+      alert("Necesitamos tu key y secret para poder mostrar tu balance.")
+    };
+    buildMenuCommands();
+    let goalsContainers = document.getElementsByClassName('fintual-app-goal-items');
+    let base = goalsContainers[goalsContainers.length - 1];
+    let bitcoinContainer = document.createElement('div');
+    bitcoinContainer.setAttribute('id','bitcoin-container');
+    base.append(bitcoinContainer);
+    bitcoinContainer.innerHTML = buildHTML("Hablando con Buda ...");
+    fillCapital(key, secret);
+})();
+</code></pre></div></div>
+
+<p>Flujo principal del script</p>
+<ul>
+  <li>Revisa que exista la llave para encriptar las credenciales</li>
+  <li>Obtiene los valores para el API key + secret</li>
+  <li>Si existen los valores, se desencriptan con la llave, sino se piden con un prompt</li>
+  <li>Construye los menúes para cambiar la API key y el secret</li>
+  <li>Construye los nodos HTML para escribir el monto</li>
+  <li>Llama a <code class="language-plaintext highlighter-rouge">fillCapital</code></li>
+</ul>
+
+
+  </div></div>
+
+    </section>
+  </main>
+</body>
+
+</html>

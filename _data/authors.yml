@@ -23,3 +23,15 @@ boris-macias:
       url: "https://github.com/borismacias"
     - title: "linkedin"
       url: "https://www.linkedin.com/in/borismacias"
+
+pedro-aste:
+  name: Pedro Aste
+  avatar: assets/author/pedro-aste.png
+  tagline: Desarrollador de Software
+  email: pedro@pedroaste.com
+  github: wachunei
+  social:
+    - title: "github"
+      url: "https://github.com/wachuneu"
+    - title: "linkedin"
+      url: "https://www.linkedin.com/in/pedropabloaste"
